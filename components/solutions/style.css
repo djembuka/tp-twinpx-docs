@@ -1,0 +1,28 @@
+.solutions__item {
+  margin-bottom: 60px;
+}
+.solutions__item__image {
+  background-color: #f9fafc;
+  padding-top: 60%;
+  margin-bottom: 30px;
+}
+.solutions__item__title {
+  font-size: 1.13rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.solutions__more .button {
+  min-width: 300px;
+}
+
+@media (max-width: 767px) {
+  .solutions__item__image {
+    margin-bottom: 1rem;
+  }
+  .solutions__item__title {
+    margin-bottom: 2rem;
+  }
+  .solutions__item {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,68 @@
+.menu-collapse {
+  height: 20px;
+  white-space: nowrap;
+  position: relative;
+}
+.menu-collapse a,
+.menu-collapse span {
+  margin-right: 46px;
+  display: inline-block;
+}
+.menu-collapse a,
+.menu-collapse a:active,
+.menu-collapse a:focus,
+.menu-collapse a:hover,
+.menu-collapse a:visited {
+  color: #000;
+}
+.menu-collapse :last-of-type {
+  margin-right: 0;
+}
+.menu-collapse__more {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #f27405;
+  cursor: pointer;
+}
+.menu-collapse__more::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 8px 0 0 #fff, -8px 0 0 #fff;
+}
+.menu-collapse__sub {
+  position: absolute;
+  top: 55px;
+  left: calc(-125px + 20px);
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #0000000d;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+.menu-collapse__sub a,
+.menu-collapse__sub span {
+  display: block;
+  margin: 0 0 15px;
+  white-space: normal;
+}
+.menu-collapse__sub :last-child {
+  margin-bottom: 0;
+}
+.menu-collapse__more--show .menu-collapse__sub {
+  opacity: 1;
+  pointer-events: auto;
+}

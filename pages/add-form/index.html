@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Добавление статьи | Twin px docs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Twin px docs" />
+    <meta property="og:description" content="Форма Twin px" />
+    <meta property="og:image" content="template/images/logo-twinpx.svg" />
+    <meta property="og:type" content="company" />
+    <meta property="og:url" content="http://2px.ru" />
+
+    <style>
+      .page-container {
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <link href="../../components/header/style.css" rel="stylesheet" />
+      <script src="../../components/header/script.js"></script>
+      <header>
+        <div class="container">
+          <a href="../../index.html" class="header-logo">
+            <img src="../../images/twinpx-logo.svg" alt="Twin px" />
+          </a>
+
+          <link
+            href="../../components/menu-collapse/style.css"
+            rel="stylesheet"
+          />
+          <script src="../../components/menu-collapse/script.js"></script>
+          <div class="header-menu menu-collapse d-none d-lg-flex">
+            <a href="" class="menu-collapse__item">Решения</a>
+            <a href="" class="menu-collapse__item">О разработчике</a>
+            <a href="" class="menu-collapse__item"
+              >Дополнительное меню с большим количеством слов</a
+            >
+            <a href="" class="menu-collapse__item">Дополнительное меню 2</a>
+            <a href="" class="menu-collapse__item">Дополнительное меню 3</a>
+          </div>
+
+          <link href="../../components/search/style.css" rel="stylesheet" />
+          <script src="../../components/search/script.js"></script>
+          <div id="headerSearch" class="header-search d-none d-lg-block">
+            <div class="position-absolute">
+              <div class="container position-relative">
+                <form action="">
+                  <div class="header-search__content">
+                    <input
+                      type="text"
+                      class="header-search__input"
+                      placeholder="Поиск"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M19.57,18.646l-3.863-3.863a6.751,6.751,0,1,0-.924.924l3.863,3.863a.654.654,0,0,0,.924-.924ZM5.069,10.5a5.434,5.434,0,1,1,9.277,3.838h0v0A5.431,5.431,0,0,1,5.069,10.5Z"
+                        transform="translate(-3.762 -3.762)"
+                        fill="#161615"
+                      />
+                    </svg>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="header-auth"
+            style="background-image: url(../../images/icon-auth.svg)"
+          ></div>
+          <div class="full-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24.115"
+              height="20.532"
+              viewBox="0 0 24.115 20.532"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="line"
+                  d="M27.071,7.577H4.956a1,1,0,0,1,0-2H27.071a1,1,0,1,1,0,2Z"
+                  transform="translate(-3.956 -5.577)"
+                />
+                <path
+                  class="line"
+                  d="M27.071,16.843H4.956a1,1,0,0,1,0-2H27.071a1,1,0,0,1,0,2Z"
+                  transform="translate(-3.956 -5.577)"
+                />
+                <path
+                  class="line"
+                  d="M27.071,26.109H10.553a1,1,0,0,1,0-2H27.071a1,1,0,0,1,0,2Z"
+                  transform="translate(-3.956 -5.577)"
+                />
+              </g>
+            </svg>
+            <div class="full-menu-dropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-3">
+                    <b>Решения</b>
+                    <div><a href="">Seller</a></div>
+                    <div><a href="">Travelers</a></div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <b>О компании</b>
+                    <div><a href="">Контактная информация</a></div>
+                    <div><a href="">Условия использования</a></div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <b>Сервисы</b>
+                    <div><a href="">Seller</a></div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <b>Пункт 4</b>
+                    <div><a href="">Seller</a></div>
+                    <div><a href="">Travelers</a></div>
+                    <div><a href="">1C-Битрикс:Управление сайтом</a></div>
+                    <div><a href="">Битрикс24</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <h1>Добавление статьи</h1>
+        <script src="../../template/libs/editor.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@2.8.0/dist/bundle.min.js"></script>
+        <script src="../../components/add-form/script.js"></script>
+
+        <link rel="stylesheet" href="../../components/add-form/style.css" />
+
+        <div class="add-form">
+          <div class="add-form-note">Текст</div>
+          <div
+            id="editorjs"
+            data-url="../../components/add-form/response.json"
+          ></div>
+          <hr class="hr--xl" />
+          <div id="editorjsSubmit" class="add-form-button">
+            <button class="button button--md button--primary">Сохранить</button>
+            <div class="text-muted"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          Вы хотите купить готовое решение для вашего бизнеса или разработать
+          индивидуальное. Мы поможем.<br />© ООО «Твин пикс» 2021.
+        </div>
+      </footer>
+    </div>
+
+    <link href="../../template/libs/bootstrap@5.1.2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../template/template_styles.css" />
+
+    <script src="../../template/libs/bootstrap@5.1.2.bundle.min.js"></script>
+  </body>
+</html>
